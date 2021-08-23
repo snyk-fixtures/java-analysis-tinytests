@@ -1,9 +1,7 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.14.0
-language-settings:
-ignore:
-patch:
 exclude:
-  - Test1.java
-  - Test3.java
-  - Test4.*
+  global:
+    - Test1.java
+    - Test3.java
+    - Test4.*
