@@ -19,6 +19,14 @@ app.get("/user", (req, res) => {
     }
     res.send(results);
   });
+
+  const query2 = `SELECT * FROM users WHERE id = ${id}`;
+  connection.query(query2, (error, results) => {
+    if (error) {
+      throw error;
+    }
+    res.send(results);
+  });
 });
 
 app.listen(3000, () => {
