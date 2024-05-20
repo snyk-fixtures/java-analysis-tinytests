@@ -10,6 +10,7 @@ const connection = mysql.createConnection({
 });
 
 app.get("/user", (req, res) => {
+  //important comment
   const id = req.query.id;
   const query = `SELECT * FROM users WHERE id = ${id}`;
   connection.query(query, (error, results) => {
