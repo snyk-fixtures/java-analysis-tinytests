@@ -2,6 +2,7 @@ import java.security.MessageDigest;
 
 class Test {
 
+
   
   public void IP(byte[] salt) {
     encrypt(salt, "MD5");
